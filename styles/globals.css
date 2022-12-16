@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Swis721';
+  src: url('../public/assets/fonts/Swiss721BT-Roman.eot');
+  src: url('../public/assets/fonts/Swiss721BT-Roman.eot?#iefix')
+      format('embedded-opentype'),
+    url('../public/assets/fonts/Swiss721BT-Roman.woff2') format('woff2'),
+    url('../public/assets/fonts/Swiss721BT-Roman.woff') format('woff'),
+    url('../public/assets/fonts/Swiss721BT-Roman.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Swis721', serif;
+  scroll-behavior: smooth;
+}
+
+html {
+  background-color: #303030;
+}
+
+.__react_component_tooltip::before,
+.__react_component_tooltip::after {
+  content: none !important;
+}
+
+.slick-slide {
+  visibility: hidden;
+}
+.slick-slide.slick-active {
+  visibility: visible;
+}
+
+.wordSpacing {
+  word-spacing: -3px;
+}
+
+.awssld,
+.awssld__wrapper,
+.awssld__container,
+.awssld__box {
+  --content-background-color: transparent !important;
+  --slider-transition-duration: 300ms !important;
+  --control-bullet-color: #eeeeee !important;
+  --control-bullet-active-color: #fff !important;
+}
+.awssld__controls {
+  visibility: visible !important;
+}
+
+.aws-btn {
+  --slider-transition-duration: 10ms !important;
+}
+
+.awssld__bullets button {
+  /* width: 0.5rem !important;
+  height: 0.5rem !important; */
+  display: none !important;
+}
+
+@media screen and (max-width: 500px) {
+  .awssld__bullets button {
+    /* width: 0.5rem !important;
+    height: 0.5rem !important; */
+    display: none !important;
+  }
+}
